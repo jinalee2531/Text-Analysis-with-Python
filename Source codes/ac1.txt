@@ -1,0 +1,288 @@
+<h1 id="page-title">
+              Alert (TA15-213A)
+             </h1>
+             <h2 id="page-sub-title">
+              Recent Email Phishing Campaigns – Mitigation and Response Recommendations
+             </h2>
+             <footer class="submitted meta-text">
+              Original release date: August 01, 2015
+             </footer>
+             <div id="social-options">
+              <!-- START PRINT BUTTON -->
+              <div id="print-button">
+               <span id="custom-print-button">
+                <a href="javascript:window.print();" rel="nofollow">
+                 Print Document
+                </a>
+               </span>
+              </div>
+              <!-- END PRINT BUTTON -->
+              <!-- START TWEET BUTTON -->
+              <div id="tweet-button">
+               <span id="custom-tweet-button">
+                <a class="popup-twitter" href="https://twitter.com/share?url=https%3A%2F%2Fwww.us-cert.gov%2Fncas%2Falerts%2FTA15-213A" rel="nofollow" target="_blank">
+                 Tweet
+                </a>
+               </span>
+              </div>
+              <script type="text/javascript">
+               jQuery('.popup-twitter').popupWindow({ 
+					height:400, 
+					width:575, 
+					top:50, 
+					left:50 
+				});
+              </script>
+              <!-- END TWEET BUTTON -->
+              <!-- START FACEBOOK BUTTON -->
+              <div id="facebook-button">
+               <span id="custom-facebook-button">
+                <a class="popup-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.us-cert.gov%2Fncas%2Falerts%2FTA15-213A" rel="nofollow" target="_blank">
+                 Like Me
+                </a>
+               </span>
+              </div>
+              <script type="text/javascript">
+               jQuery('.popup-facebook').popupWindow({ 
+					height:500, 
+					width:900, 
+					top:50, 
+					left:50 
+				});
+              </script>
+              <!-- END FACEBOOK BUTTON -->
+              <!-- START SHARE BUTTON -->
+              <div id="share-button">
+               <span id="custom-share-button">
+                <a class="popup-share" href="http://www.addthis.com/bookmark.php?url=https%3A%2F%2Fwww.us-cert.gov%2Fncas%2Falerts%2FTA15-213A" rel="nofollow" target="_blank">
+                 Share
+                </a>
+               </span>
+              </div>
+              <script type="text/javascript">
+               jQuery('.popup-share').popupWindow({ 
+					height:500, 
+					width:900, 
+					top:50, 
+					left:50 
+				});
+              </script>
+              <!-- END SHARE BUTTON -->
+             </div>
+            </div>
+            <div class="content clearfix">
+             <div id="ncas-content">
+              <a id="affected">
+              </a>
+              <h3>
+               Systems Affected
+              </h3>
+              <div class="field field-name-field-alert-systems-affected field-type-text-long field-label-hidden">
+               <div class="field-items">
+                <div class="field-item even">
+                 <p>
+                  Microsoft Windows Systems, Adobe Flash Player, and Linux
+                 </p>
+                </div>
+               </div>
+              </div>
+              <a id="overview">
+              </a>
+              <h3>
+               Overview
+              </h3>
+              <div class="field field-name-field-alert-overview field-type-text-long field-label-hidden">
+               <div class="field-items">
+                <div class="field-item even">
+                 <p>
+                  Between June and July 2015, the United States Computer Emergency Readiness Team (US-CERT) received reports of multiple, ongoing and likely evolving, email-based phishing campaigns targeting U.S. Government agencies and private sector organizations. This alert provides general and phishing-specific mitigation strategies and countermeasures.
+                 </p>
+                </div>
+               </div>
+              </div>
+              <a id="description">
+              </a>
+              <h3>
+               Description
+              </h3>
+              <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+               <div class="field-items">
+                <div class="field-item even">
+                 <p>
+                  US-CERT is aware of three phishing campaigns targeting U.S. Government agencies and private organizations across multiple sectors. All three campaigns leveraged website links contained in emails; two sites exploited a recent Adobe Flash vulnerability (
+                  <a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2015-5119">
+                   CVE-2015-5119
+                  </a>
+                  ) while the third involved the download of a compressed (i.e., ZIP) file containing a malicious executable file. Most of the websites involved are legitimate corporate or organizational sites that were compromised and are hosting malicious content.
+                 </p>
+                </div>
+               </div>
+              </div>
+              <a id="impact">
+              </a>
+              <h3>
+               Impact
+              </h3>
+              <div class="field field-name-field-alert-impact field-type-text-long field-label-hidden">
+               <div class="field-items">
+                <div class="field-item even">
+                 <p>
+                  Systems infected through targeted phishing campaigns act as an entry point for attackers to spread throughout an organization’s entire enterprise, steal sensitive business or personal information, or disrupt business operations.
+                 </p>
+                </div>
+               </div>
+              </div>
+              <a id="solution">
+              </a>
+              <h3>
+               Solution
+              </h3>
+              <div class="field field-name-field-alert-solution field-type-text-long field-label-hidden">
+               <div class="field-items">
+                <div class="field-item even">
+                 <p>
+                  <strong>
+                   Phishing Mitigation and Response Recommendations
+                  </strong>
+                 </p>
+                 <ul>
+                  <li>
+                   Implement perimeter blocks for known threat indicators:
+                   <ul style="list-style-type: circle;">
+                    <li>
+                     Email server or email security gateway filters for email indicators
+                    </li>
+                    <li>
+                     Web proxy and firewall filters for websites or Internet Protocol (IP) addresses linked in the emails or used by related malware
+                    </li>
+                    <li>
+                     DNS server blocks (blackhole) or redirects (sinkhole) for known related domains and hostnames
+                    </li>
+                   </ul>
+                  </li>
+                  <li>
+                   Remove malicious emails from targeted user mailboxes based on email indicators (e.g., using Microsoft ExMerge).
+                  </li>
+                  <li>
+                   Identify recipients and possible infected systems:
+                   <ul style="list-style-type: circle;">
+                    <li>
+                     Search email server logs for applicable sender, subject, attachments, etc. (to identify users that may have deleted the email and were not identified in purge of mailboxes)
+                    </li>
+                    <li>
+                     Search applicable web proxy, DNS, firewall or IDS logs for activity the malicious link clicked.
+                    </li>
+                    <li>
+                     Search applicable web proxy, DNS, firewall or IDS logs for activity to any associated command and control (C2) domains or IP addresses associated with the malware.
+                    </li>
+                    <li>
+                     Review anti-virus (AV) logs for alerts associated with the malware.  AV products should be configured to be in quarantine mode. It is important to note that the absence of AV alerts or a clean AV scan should not be taken as conclusive evidence a system is not infected.
+                    </li>
+                    <li>
+                     Scan systems for host-level indicators of the related malware (e.g., YARA signatures)
+                    </li>
+                   </ul>
+                  </li>
+                 </ul>
+                 <ul>
+                  <li>
+                   For systems that may be infected:
+                   <ul style="list-style-type: circle;">
+                    <li>
+                     Capture live memory of potentially infected systems for analysis
+                    </li>
+                    <li>
+                     Take forensic images of potentially infected systems for analysis
+                    </li>
+                    <li>
+                     Isolate systems to a virtual local area network (VLAN) segmented form the production agency network (e.g., an Internet-only segment)
+                    </li>
+                   </ul>
+                  </li>
+                  <li>
+                   Report incidents, with as much detail as possible, to the NCCIC.
+                  </li>
+                 </ul>
+                 <p>
+                  <strong>
+                   Educate Your Users
+                  </strong>
+                 </p>
+                 <p>
+                  Organizations should remind users that they play a critical role in protecting their organizations form cyber threats. Users should:
+                 </p>
+                 <ul>
+                  <li>
+                   Exercise caution when opening email attachments, even if the attachment is expected and the sender appears to be known.  Be particularly wary of compressed or ZIP file attachments.
+                  </li>
+                  <li>
+                   Avoid clicking directly on website links in emails; attempts to verify web addresses independently (e.g., contact your organization’s helpdesk or sear the Internet for the main website of the organization or topic mentioned in the email).
+                  </li>
+                  <li>
+                   Report any suspicious emails to the information technology (IT) helpdesk or security office immediately.
+                  </li>
+                 </ul>
+                 <p>
+                  <strong>
+                   Basic Cyber Hygiene
+                  </strong>
+                 </p>
+                 <p>
+                  Practicing basic cyber hygiene would address or mitigate the vast majority of security breaches handled by today’s security practitioners:
+                 </p>
+                 <ul>
+                  <li>
+                   Privilege control (i.e., minimize administrative or superuser privileges)
+                  </li>
+                  <li>
+                   Application whitelisting / software execution control (by file or location)
+                  </li>
+                  <li>
+                   System application patching (e.g., operating system vulnerabilities, third-party vendor applications)
+                  </li>
+                  <li>
+                   Security software updating (e.g., AV definitions, IDS/IPS signatures and filters)
+                  </li>
+                  <li>
+                   Network segmentation (e.g., separate administrative networks from business-critical networks with physical controls and virtual local area networks)
+                  </li>
+                  <li>
+                   Multi-factor authentication (e.g., one-time password tokens, personal identity verification (PIV cards)
+                  </li>
+                 </ul>
+                 <p>
+                  <strong>
+                   Further Information
+                  </strong>
+                 </p>
+                 <p>
+                  For more information on cybersecurity best practices, users and administrators are encouraged to review US-CERT Security Tip: Handling Destructive Malware to evaluate their capabilities encompassing planning, preparation, detection, and response. Another resource is ICS-CERT Recommended Practice: Improving Industrial Control Systems Cybersecurity with Defense-In-Depth Strategies.
+                 </p>
+                </div>
+               </div>
+              </div>
+              <a id="references">
+              </a>
+              <h3>
+               References
+              </h3>
+              <div class="field field-name-field-alert-references field-type-link-field field-label-hidden clearfix">
+               <ul class="field-items">
+                <li class="field-item even">
+                 <a href="http://www.nist.gov/cyberframework" target="_blank">
+                  Executive Order 13636: Cybersecurity Framework
+                 </a>
+                </li>
+                <li class="field-item odd">
+                 <a href="https://www.us-cert.gov/ncas/tips/ST13-003" target="_blank">
+                  US-CERT Security Tip: Handling Destructive Malware
+                 </a>
+                </li>
+                <li class="field-item even">
+                 <a href="http://ics-cert.us-cert.gov/sites/default/files/recommended_practices/Defense_in_Depth_Oct09.pdf" target="_blank">
+                  ICS-CERT Recommended Practice: Improving Industrial Control Systems Cybersecurity with Defense-In-Depth Strategies
+                 </a>
+                </li>
+               </ul>
+              </div>
+              <a id="revisions">
